@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Trip Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI TOUR GUIDE</h1>
+      <p>Discover your next destination with AI-powered recommendations</p>
+    </header>
+
+    <div class="search-section">
+      <input type="text" id="search-input" placeholder="Enter a destination (e.g., Paris, France)" />
+      <button id="search-button">
+        <i class="fas fa-plane-departure"></i> Search
+      </button>
+      <div id="suggestions" class="suggestions"></div>
+    </div>
+
+    <div id="error-message" class="hidden error-box"></div>
+    <div id="loader" class="loader hidden">Loading...</div>
+
+    <div id="trip-results" class="trip-details hidden"></div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACQGpHuR7_3E_AZuVKo2eCOVt3xmLbjjQ&libraries=places"
+  async
+  defer
+></script>
+
+</body>
+</html>
